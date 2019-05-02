@@ -1,13 +1,5 @@
 
-    d3.csv("data/nfl-rushing.csv", function(d) {
-    	//convert string into #
-      return {
-        td : +d.TD,
-        fum : +d.FUM,
-        yds : +d.Yds,
-      };
-    }).then(function(data) {
-
+  d3.csv("pedestrian.csv").then(function(data) {
 
     //variables for height, width, and padding
     var w = 700;
@@ -29,20 +21,20 @@
 
     //maps the max value for yards with the width of the svg with padding
     	var xScale = d3.scaleLinear()
-    								 .domain([0, d3.max(data, function(d) { return d.yds  })])
+    								 .domain([0, d3.max(data, function(d) { return d.num311issues  })])
     								 .range([p, w - p]);
 
     //maps the max value for touchdowns with the height of the svg with padding
     	var yScale = d3.scaleLinear()
-    								 .domain([0, d3.max(data, function(d) { return d.td })])
+    								 .domain([0, d3.max(data, function(d) { return d.walkscore })])
     							 	.range([ h - p , p ]);
 
     		// first value plots on xasis represents yards
     		// second value plots on y axix represents touch downs
     		// radius is the number of fumbles
-    							circles.attr("cx", function(d) {return xScale(d.yds) })
-    									  	.attr("cy",function(d) {return yScale(d.td) })
-    											.attr("r",function(d) {return d.fum});
+    							circles.attr("cx", function(d) {return xScale(d.num311issues) })
+    									  	.attr("cy",function(d) {return yScale(d.walkscore) })
+    											.attr("r", 4)
 
     						 circles.attr("fill","green")
     				          .style("opacity", .5)
@@ -74,8 +66,6 @@
     							// .attr ("x", (w+p)/2)
     							//  .attr("y", h + 5)
     							//  .text("x axis");
-
-
 
 
     	 });

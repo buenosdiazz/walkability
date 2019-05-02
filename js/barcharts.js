@@ -8,9 +8,18 @@ var h = 200;
     //console.log(data);
 
 
+
   var svg = d3.select("#scorechart").append("svg")
               .attr("width", w)
               .attr("height", h);
+
+              var tooltip = d3.select("#scorechart")
+                      .append("div")
+                      .style("background", "white")
+                      .style("padding", "3px")
+                      .style("position", "absolute")
+                      .style("font-size", "11px")
+                      .style("visibility", "hidden");
 
   var rectangles = svg.selectAll("rect")
                       .data(data)
@@ -26,6 +35,16 @@ var h = 200;
 
                       rectangles.attr("fill","#374452")
                            .style("opacity", .5)
+                           .on("mouseover", function(d) {
+              //  d3.select(this).attr('opacity', 1)
+              return tooltip.style("visibility", "visible").html('<p>' + d.description + '<br>' + "Neighborhood: " + d.neighborhood + '</p>');
+            })
+            .on("mousemove", function(d) {
+              return tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 20) + "px").html('<p>' + d.description + '<br>' +  "Neighborhood: " + d.neighborhood + '</p>');
+            })
+            .on("mouseout", function(d) {
+              return tooltip.style("visibility", "hidden");
+            });
 
   var walkscorelabels = svg.selectAll("text.walkscore")
                   .data(data)
