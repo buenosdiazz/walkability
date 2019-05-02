@@ -4,7 +4,8 @@
     //variables for height, width, and padding
     var w = 700;
     var	h = 500;
-    var p = 30;
+    var p = 60;
+    //var pleft = 60;
 
     //create svg
     	var svg = d3.select("#scatterchart")
@@ -12,7 +13,7 @@
     	            .attr("width",w + p)
     	            .attr("height",h + p);
 
-                  var tooltip = d3.select("#scorechart")
+                  var tooltip = d3.select("#scatterchart")
                           .append("div")
                           .style("background", "white")
                           .style("padding", "5px")
@@ -86,6 +87,27 @@
     							// .attr ("x", (w+p)/2)
     							//  .attr("y", h + 5)
     							//  .text("x axis");
+
+
+                  svg.append("text")
+                .attr("transform",
+                      "translate(" + (w/2) + " ," +
+                                     (h + 5) + ")")
+                .style("text-anchor", "middle")
+                .style("font-family", "Gothic A1, sans-serif")
+                .text("Number of 311 Calls");
+
+
+                svg.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 -5)
+        .attr("x",0 - (h / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+          .style("font-family", "Gothic A1, sans-serif")
+        .text("Walkscore");
+
+
 
 
     	 });
