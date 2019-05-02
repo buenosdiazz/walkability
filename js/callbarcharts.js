@@ -19,10 +19,11 @@ var h = 200;
                       .attr("x", function(d, i) { return (i * 60) + 255;
                       })
                       .attr("y", function(d) {
-             return (h - d.walkscore);
+             return (h - (10 *d.num311issues));
            })
                       .attr("width", 40)
-                      .attr("height", function(d) {return d.walkscore;})
+                      .attr("height", function(d) {return (d.num311issues * 10)}
+                    )
 
                       rectangles.attr("fill","green")
                            .style("opacity", .5)
@@ -32,13 +33,13 @@ var h = 200;
                   .enter()
                   .append("text")
                   .attr("class", "walkscore")
-                  .text(function(d) {return d.walkscore })
+                  .text(function(d) {return d.num311issues })
                   .style("font-size", "13px");
                   walkscorelabels.attr("x", function(d, i) {
                               return (i * 60) + 265 ;
                             })
                             .attr("y", function(d) {
-                              return (h - d.walkscore) + 12 ;
+                              return (h - 10* d.num311issues) + 12 ;
                                 });
 
 
@@ -53,7 +54,7 @@ var h = 200;
                           return (i * 60) + 260;
                             })
                         .attr("y", function(d) {
-                        return (h - d.walkscore) - 5 ;
+                        return (h - 10 * d.num311issues) - 5 ;
                           });
 
 
