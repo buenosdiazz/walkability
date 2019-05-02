@@ -22,8 +22,22 @@ main {
   grid-row: 3 / span 1;
 }
 
+.maptitle {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 1;
+}
 
-.callCategory {
+#mapchart {
+  grid-column: 1/ span 2;
+  grid-row: 5 / span 1;
+}
+
+.maptext {
+  grid-column: 1/ span 2;
+  grid-row: 6 / span 1;
+}
+
+.score{
   grid-column: 1 / span 2;
   grid-row: 7 / span 1;
 }
@@ -39,10 +53,26 @@ main {
   width: 700px;
 }
 
-#callchart  {
+
+.scoreText  {
   grid-column: 1 / span 2;
   grid-row: 9 / span 1;
+}
+
+
+#callchart  {
+  grid-column: 1 / span 2;
+  grid-row: 11 / span 1;
   align-items: center;
+}
+.call {
+  grid-column: 1 / span 2;
+  grid-row: 10 / span 1;
+}
+
+.callText {
+  grid-column: 1/ span 2;
+  grid-row: 12 / span 1;
 }
 
 #callchart  {
@@ -51,24 +81,7 @@ main {
 }
 
 
-
-.categoryChartText  {
-  grid-column: 1 / span 2;
-  grid-row: 10 / span 1;
-}
-
-.locations {
-  grid-column: 1 / span 2;
-  grid-row: 11 / span 1;
-}
-
-
-.locationText {
-  grid-column: 1 / span 2;
-  grid-row: 12 / span 1;
-}
-
-.byDistrictTitle {
+.scatterTitle {
   grid-column: 1 / span 2;
   grid-row: 13 / span 1;
   align-items: center;
@@ -79,26 +92,14 @@ main {
 
 }
 
-.byDistrictText {
+.scatterText {
   grid-column: 1 / span 2;
   grid-row: 14 / span 1;
   align-items: center;
 }
 
-.monthtitle {
-  grid-column: 1 / span 2;
-  grid-row: 4 / span 1;
-}
 
-#monthchart {
-  grid-column: 1/ span 2;
-  grid-row: 5 / span 1;
-}
 
-.monthtext {
-  grid-column: 1/ span 2;
-  grid-row: 6 / span 1;
-}
 
 
 h1 {
@@ -221,11 +222,6 @@ rect:hover {
   display: none;
 }
 
-/* #monthchart label {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-} */
 
 #map {
   width: 700px;
