@@ -22,7 +22,7 @@ var h = 200;
              return (h - d.walkscore);
            })
                       .attr("width", 40)
-                      .attr("height", function(d) {return d.walkscore;})
+                      .attr("height", function(d) {return d.walkscore ;} )
 
                       rectangles.attr("fill","green")
                            .style("opacity", .5)
