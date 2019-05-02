@@ -25,7 +25,7 @@ var h = 200;
                       .data(data)
                       .enter()
                       .append("rect")
-                      .attr("x", function(d, i) { return (i * 60) + 255;
+                      .attr("x", function(d, i) { return (i * 50) + 285;
                       })
                       .attr("y", function(d) {
              return (h - (10 *d.num311issues));
@@ -56,7 +56,7 @@ var h = 200;
                   .style("font-size", "13px")
                   .style("font-family", "Gothic A1, sans-serif");
                   calllabels.attr("x", function(d, i) {
-                              return (i * 60) + 270 ;
+                              return (i * 50) + 300 ;
                             })
                             .attr("y", function(d) {
                               return (h - 10* d.num311issues) + 15 ;
@@ -72,7 +72,7 @@ var h = 200;
                         .style("font-family", "Gothic A1, sans-serif")
                       .style("font-size", "12px");
         zipcodelabels.attr("x", function(d, i) {
-                          return (i * 60) + 258;
+                          return (i * 50) + 288;
                             })
                         .attr("y", function(d) {
                         return (h - 10 * d.num311issues) - 7 ;

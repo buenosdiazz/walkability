@@ -26,7 +26,7 @@ var h = 200;
                       .data(data)
                       .enter()
                       .append("rect")
-                      .attr("x", function(d, i) { return (i * 60) + 255;
+                      .attr("x", function(d, i) { return (i * 50) + 285;
                       })
                       .attr("y", function(d) {
              return (h - (2 * d.walkscore));
@@ -56,7 +56,7 @@ var h = 200;
                   .style("font-family", "Gothic A1, sans-serif")
                   .style("font-size", "13px");
                   walkscorelabels.attr("x", function(d, i) {
-                              return (i * 60) + 267 ;
+                              return (i * 50) + 295 ;
                             })
                             .attr("y", function(d) {
                               return (h - (2*d.walkscore)) + 15 ;
@@ -72,7 +72,7 @@ var h = 200;
                       .text(function(d) { return d.zipcode })
                       .style("font-size", "12px");
         zipcodelabels.attr("x", function(d, i) {
-                          return (i * 60) + 258;
+                          return (i * 50) + 288;
                             })
                         .attr("y", function(d) {
                         return (h - (2*d.walkscore)) - 7 ;
