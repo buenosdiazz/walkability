@@ -47,10 +47,10 @@
     											.attr("r", 4)
                           .on("mouseover", function(d) {
              //  d3.select(this).attr('opacity', 1)
-             return tooltip.style("visibility", "visible").html( d.description + '<br>' + "Neighborhood: " + d.neighborhood);
+             return tooltip.style("visibility", "visible").html( "Zipcode: " + d.zipcode  + '<br>' + "Neighborhood: " + d.neighborhood + '<br>' + "Description: " +  d.description);
            })
            .on("mousemove", function(d) {
-             return tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 20) + "px").html( d.description + '<br>' +  "Neighborhood: " + d.neighborhood );
+             return tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 20) + "px").html( "Zipcode: " + d.zipcode  + '<br>' + "Neighborhood: " + d.neighborhood + '<br>' + "Description: " +  d.description);
            })
            .on("mouseout", function(d) {
              return tooltip.style("visibility", "hidden");
