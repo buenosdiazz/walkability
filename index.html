@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Walkability</title>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+      <script src="js/d3.min.js"></script>
+      <script src="js/lodash.js"></script>
+        <script src="js/barcharts.js"></script>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+
+
+  </head>
+
+
+
+  <body>
+    <div class="title">
+    </div>
+
+    <div class="hero">
+      <img src="cover.png" width="100%">
+    </div>
+
+  <div class="container">
+
+    <main>
+
+
+    <div class="intro">
+      <p>BY<strong>CAROLINA DIAZ & MELISSA GUTIERREZ</strong></p>
+      <p>Paragraph</p>
+    </div>
+
+    <div class="callCategory">
+      <h2><span>Walkscores per Zipcode</span></h2>
+      <h3>Explain walkscore</h3>
+
+
+          <div id="categoryChart"></div>
+    </div>
+
+
+
+
+
+    <div class="categoryChartText">
+      <p>The most common call category during the year of 2017 is related to updating pet information and the 2nd most common call category is Stray dog-at-large. However, stray dog-at-large merely means whoever called saw a stray dog without picking it up, and the animal service at Miami-Dade county went to the reported place without necessarily retrieved the dog. On the other hand, stray dog pick-up meaning the person who called actually got the dog. On top of that, people love dogs and stray dog can be a big concern for animal lovers. Therefore, we will be focusing on stray dog pick-up for the story and explore how their situation looks like within Miami-Dade county.</p>
+
+
+    </div>
+
+
+
+    <!-- Heat Map and Scatter Plot -->
+        <div class="locations">
+          <h2><span>&nbsp The Pick-Up Locations &nbsp</span></h2>
+          <h3>Stray Dog Pick-Up Locations (2017)</h3>
+        </div>
+
+        <div id="map"></div>
+
+
+        <div class="locationText">
+          <p>The heatmap above demonstrates the zipcodes with the most 311 requests related to “Stray Dog Pick Up” in 2017. Hover over the icon in the top right of the map to view other map layers such as “Stray Dog Pick Up” requests by individual addresses and to view where animal shelters in Miami-Dade are located  in comparison to where the reports are coming from.</p>
+        </div>
+
+    <div class="byDistrictTitle">
+      <h2><span>&nbsp The Districts &nbsp</span></h2>
+    <h3>Stray Dog Count by Districts in Miami (2017)</h3>
+    </div>
+
+      <!-- <img src="placeholder1.png" alt="bargraph1" class="placeholder1"> -->
+    <div class="byDistrictText">
+      <p>Stray Dog Count in Miami has seen a notable decline in recent years. In a closer look to how long it takes to place these stray dogs, we’ve found the average amount of placement days per district. District 4 (North Miami) had a significantly longer time placing stray dogs than the other districts, estimating 7.2 days in total. District 10 (Kendall, Westchester, and Fontainebleau) had the shortest turnaround time, averaging at 1.9 days for stray dog placement. While the other districts mostly ranged around the 2 days return period (District 4 and District 6 excluded), the shorter the turnaround time, the better it’ll be for our furry friends.</p>
+    </div>
+
+    <div class="monthtitle">
+    <h2><span>&nbsp The Calls by Month &nbsp</span></h2>
+    <h3>Stray Dog Pick-Up Calls By Month (2017)</h3>
+    </div>
+
+
+    <div id="monthchart">
+      <label><input type="radio" class="sort">Sort by number of calls</label>
+
+    </div>
+
+    <div class="monthtext">
+      <p>The stray dog pick up calls in Miami-Dade county during the year of 2017 varies a lot depending on the month. During the highest month August, there could be 212 calls related to stray dog pick up, while the lowest month December only had 112 calls related to the issue.</p>
+    <!-- var ufMap = L.map("map").setview([29.646, -82.349], 15) -->
+    <!-- L.titleLayer("https.png")
+    maxZoom: 20 -->
+    </div>
+
+  <div class="shelterstitle">
+    <h2><span>&nbsp The Shelters &nbsp</span></h2>
+    <h3>Where do the Animals Go?</h3>
+  <!-- <img src="js/paw_blue.png">
+  <img src="js/paw_green.png"> -->
+  </div>
+  <div id="shelter"></div>
+    <script src="js/sheltermap.js"></script>
+
+  <div class="shelterstext">
+      <p>The animals picked-up from the 3-1-1 calls make their way to the Miami-Dade County Animal Services Center. The center's mission includes saving lives, protecting animals against cruelty, and reuniting lost pets with their owners. As part of their mission, the center offers many services, including pet adoption, animal licenses, and vaccinations.</p>
+
+      <p> The center has taken in over <strong>41,000</strong> dogs in the last 3 year.</p>
+
+      <p>To help with the intake of stray dogs, there are several non-profit organizations throughout Miami-Dade that are also helping stray or unwanted dogs find a home. Through the donations and with the help of volunteers, these organizations provide a foster home and assist with medical needs. </p>
+
+      <p>Click on the paw icons to view the shelters available in Miami-Dade.</p>
+
+  </div>
+
+
+</main>
+  </div>
+  </body>
+</html>
