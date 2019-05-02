@@ -8,7 +8,7 @@ var h = 200;
     //console.log(data);
 
 
-  var svg = d3.select("#scorechart").append("svg")
+  var svg = d3.select("#callchart").append("svg")
               .attr("width", w)
               .attr("height", h);
 

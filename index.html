@@ -8,8 +8,8 @@
       <script src="js/d3.min.js"></script>
       <script src="js/lodash.js"></script>
         <script src="js/barcharts.js"></script>
-
-    <link href="css/style.css" rel="stylesheet" />
+          <script src="js/callbarcharts.js"></script>
+        <link href="css/style.css" rel="stylesheet" />
 
 
 
@@ -39,18 +39,12 @@
       <h2><span>Walkscores per Zipcode</span></h2>
       <h3>Explain walkscore</h3>
 
+<div id="scorechart"></div>
 
-          <div id="categoryChart"></div>
     </div>
-
-
-
-
 
     <div class="categoryChartText">
       <p>The most common call category during the year of 2017 is related to updating pet information and the 2nd most common call category is Stray dog-at-large. However, stray dog-at-large merely means whoever called saw a stray dog without picking it up, and the animal service at Miami-Dade county went to the reported place without necessarily retrieved the dog. On the other hand, stray dog pick-up meaning the person who called actually got the dog. On top of that, people love dogs and stray dog can be a big concern for animal lovers. Therefore, we will be focusing on stray dog pick-up for the story and explore how their situation looks like within Miami-Dade county.</p>
-
-
     </div>
 
 
@@ -59,9 +53,11 @@
         <div class="locations">
           <h2><span>&nbsp The Pick-Up Locations &nbsp</span></h2>
           <h3>Stray Dog Pick-Up Locations (2017)</h3>
+
+                  <div id="callchart"></div>
         </div>
 
-        <div id="map"></div>
+
 
 
         <div class="locationText">
@@ -103,7 +99,6 @@
   <img src="js/paw_green.png"> -->
   </div>
   <div id="shelter"></div>
-    <script src="js/sheltermap.js"></script>
 
   <div class="shelterstext">
       <p>The animals picked-up from the 3-1-1 calls make their way to the Miami-Dade County Animal Services Center. The center's mission includes saving lives, protecting animals against cruelty, and reuniting lost pets with their owners. As part of their mission, the center offers many services, including pet adoption, animal licenses, and vaccinations.</p>
