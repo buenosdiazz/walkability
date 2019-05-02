@@ -16,9 +16,9 @@ var h = 200;
               var tooltip = d3.select("#scorechart")
                       .append("div")
                       .style("background", "white")
-                      .style("padding", "3px")
+                      .style("padding", "5px")
                       .style("position", "absolute")
-                      .style("font-size", "11px")
+                      .style("font-size", "13px")
                       .style("visibility", "hidden");
 
   var rectangles = svg.selectAll("rect")
@@ -37,10 +37,10 @@ var h = 200;
                            .style("opacity", .5)
                            .on("mouseover", function(d) {
               //  d3.select(this).attr('opacity', 1)
-              return tooltip.style("visibility", "visible").html('<p>' + d.description + '<br>' + "Neighborhood: " + d.neighborhood + '</p>');
+              return tooltip.style("visibility", "visible").html( d.description + '<br>' + "Neighborhood: " + d.neighborhood);
             })
             .on("mousemove", function(d) {
-              return tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 20) + "px").html('<p>' + d.description + '<br>' +  "Neighborhood: " + d.neighborhood + '</p>');
+              return tooltip.style("top", (d3.event.pageY - 20) + "px").style("left", (d3.event.pageX + 20) + "px").html( d.description + '<br>' +  "Neighborhood: " + d.neighborhood );
             })
             .on("mouseout", function(d) {
               return tooltip.style("visibility", "hidden");

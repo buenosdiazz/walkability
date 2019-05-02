@@ -4,13 +4,14 @@
     //variables for height, width, and padding
     var w = 700;
     var	h = 500;
-    var p = 40;
+    var p = 20;
 
     //create svg
     	var svg = d3.select("#scatterchart")
     	            .append("svg")
     	            .attr("width",w + p)
     	            .attr("height",h + p);
+
 
     //draw circles & bind to data
 
@@ -21,12 +22,12 @@
 
     //maps the max value for yards with the width of the svg with padding
     	var xScale = d3.scaleLinear()
-    								 .domain([0, d3.max(data, function(d) { return d.num311issues  })])
+    								 .domain([0, 11])
     								 .range([p, w - p]);
 
     //maps the max value for touchdowns with the height of the svg with padding
     	var yScale = d3.scaleLinear()
-    								 .domain([0, d3.max(data, function(d) { return d.walkscore })])
+    								 .domain([0, 95])
     							 	.range([ h - p , p ]);
 
     		// first value plots on xasis represents yards
@@ -36,8 +37,8 @@
     									  	.attr("cy",function(d) {return yScale(d.walkscore) })
     											.attr("r", 4)
 
-    						 circles.attr("fill","green")
-    				          .style("opacity", .5)
+    						 circles.attr("fill","#374452")
+    				          .style("opacity", .7)
 
 
     	var xAxis = d3.axisBottom()
