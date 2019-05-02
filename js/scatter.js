@@ -95,7 +95,7 @@ d3.csv("pedestrian.csv").then(function(data) {
   svg.append("text")
     .attr("transform",
       "translate(" + (w / 2) + " ," +
-      (h + 5) + ")")
+      (h + 7) + ")")
     .style("text-anchor", "middle")
     .style("font-family", "Gothic A1, sans-serif")
     .text("Number of 311 Calls");
@@ -103,7 +103,7 @@ d3.csv("pedestrian.csv").then(function(data) {
 
   svg.append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", 0 - 5)
+    .attr("y", 0 )
     .attr("x", 0 - (h / 2))
     .attr("dy", "1em")
     .style("text-anchor", "middle")

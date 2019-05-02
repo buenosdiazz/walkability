@@ -56,10 +56,10 @@ var h = 200;
                   .style("font-family", "Gothic A1, sans-serif")
                   .style("font-size", "13px");
                   walkscorelabels.attr("x", function(d, i) {
-                              return (i * 60) + 265 ;
+                              return (i * 60) + 267 ;
                             })
                             .attr("y", function(d) {
-                              return (h - (2*d.walkscore)) + 12 ;
+                              return (h - (2*d.walkscore)) + 15 ;
                                 });
 
 
@@ -72,10 +72,10 @@ var h = 200;
                       .text(function(d) { return d.zipcode })
                       .style("font-size", "12px");
         zipcodelabels.attr("x", function(d, i) {
-                          return (i * 60) + 260;
+                          return (i * 60) + 258;
                             })
                         .attr("y", function(d) {
-                        return (h - (2*d.walkscore)) - 5 ;
+                        return (h - (2*d.walkscore)) - 7 ;
                           });
 
 

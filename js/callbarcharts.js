@@ -47,19 +47,19 @@ var h = 200;
               return tooltip.style("visibility", "hidden");
             });
 
-  var walkscorelabels = svg.selectAll("text.walkscore")
+  var calllabels = svg.selectAll("text.call")
                   .data(data)
                   .enter()
                   .append("text")
-                  .attr("class", "walkscore")
+                  .attr("class", "call")
                   .text(function(d) {return d.num311issues })
                   .style("font-size", "13px")
                   .style("font-family", "Gothic A1, sans-serif");
-                  walkscorelabels.attr("x", function(d, i) {
-                              return (i * 60) + 265 ;
+                  calllabels.attr("x", function(d, i) {
+                              return (i * 60) + 270 ;
                             })
                             .attr("y", function(d) {
-                              return (h - 10* d.num311issues) + 12 ;
+                              return (h - 10* d.num311issues) + 15 ;
                                 });
 
 
@@ -72,10 +72,10 @@ var h = 200;
                         .style("font-family", "Gothic A1, sans-serif")
                       .style("font-size", "12px");
         zipcodelabels.attr("x", function(d, i) {
-                          return (i * 60) + 260;
+                          return (i * 60) + 258;
                             })
                         .attr("y", function(d) {
-                        return (h - 10 * d.num311issues) - 5 ;
+                        return (h - 10 * d.num311issues) - 7 ;
                           });
 
 
