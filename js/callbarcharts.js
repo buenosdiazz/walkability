@@ -25,7 +25,7 @@ var h = 200;
                       .attr("height", function(d) {return (d.num311issues * 10)}
                     )
 
-                      rectangles.attr("fill","green")
+                      rectangles.attr("fill","#374452")
                            .style("opacity", .5)
 
   var walkscorelabels = svg.selectAll("text.walkscore")
