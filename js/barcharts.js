@@ -17,6 +17,7 @@ var h = 200;
                       .append("div")
                       .style("background", "white")
                       .style("padding", "5px")
+                      .style("font-family", "Gothic A1, sans-serif")
                       .style("position", "absolute")
                       .style("font-size", "13px")
                       .style("visibility", "hidden");
@@ -52,7 +53,8 @@ var h = 200;
                   .append("text")
                   .attr("class", "walkscore")
                   .text(function(d) {return d.walkscore })
-                  .style("font-size", "13px")
+                  .style("font-family", "Gothic A1, sans-serif")
+                  .style("font-size", "13px");
                   walkscorelabels.attr("x", function(d, i) {
                               return (i * 60) + 265 ;
                             })
@@ -65,6 +67,7 @@ var h = 200;
                       .data(data)
                       .enter()
                       .append("text")
+                      .style("font-family", "Gothic A1, sans-serif")
                       .attr("class", "zipcode")
                       .text(function(d) { return d.zipcode })
                       .style("font-size", "12px");

@@ -18,6 +18,7 @@ var h = 200;
                       .style("padding", "5px")
                       .style("position", "absolute")
                       .style("font-size", "13px")
+                      .style("font-family", "Gothic A1, sans-serif")
                       .style("visibility", "hidden");
 
   var rectangles = svg.selectAll("rect")
@@ -52,7 +53,8 @@ var h = 200;
                   .append("text")
                   .attr("class", "walkscore")
                   .text(function(d) {return d.num311issues })
-                  .style("font-size", "13px");
+                  .style("font-size", "13px")
+                  .style("font-family", "Gothic A1, sans-serif");
                   walkscorelabels.attr("x", function(d, i) {
                               return (i * 60) + 265 ;
                             })
@@ -67,6 +69,7 @@ var h = 200;
                       .append("text")
                       .attr("class", "zipcode")
                       .text(function(d) { return d.zipcode })
+                        .style("font-family", "Gothic A1, sans-serif")
                       .style("font-size", "12px");
         zipcodelabels.attr("x", function(d, i) {
                           return (i * 60) + 260;

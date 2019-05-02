@@ -54,6 +54,8 @@ main {
   width: 700px;
 }
 
+
+
 .categoryChartText  {
   grid-column: 1 / span 2;
   grid-row: 7 / span 1;
@@ -79,6 +81,10 @@ main {
   grid-column: 1 / span 2;
   grid-row: 11 / span 1;
   align-items: center;
+}
+
+#scatterchart{
+  margin-left: 115px;
 }
 
 #chart {

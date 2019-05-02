@@ -4,7 +4,7 @@
     //variables for height, width, and padding
     var w = 700;
     var	h = 500;
-    var p = 20;
+    var p = 30;
 
     //create svg
     	var svg = d3.select("#scatterchart")
