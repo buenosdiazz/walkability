@@ -22,19 +22,15 @@ main {
   grid-row: 3 / span 1;
 }
 
-.pickup {
-  grid-column: 1 / span 2;
-  grid-row: 4 / span 1;
-}
 
 .callCategory {
   grid-column: 1 / span 2;
-  grid-row: 5 / span 1;
+  grid-row: 7 / span 1;
 }
 
 #scorechart  {
   grid-column: 1 / span 2;
-  grid-row: 11 / span 1;
+  grid-row: 8 / span 1;
   align-items: center;
 }
 
@@ -45,7 +41,7 @@ main {
 
 #callchart  {
   grid-column: 1 / span 2;
-  grid-row: 11 / span 1;
+  grid-row: 9 / span 1;
   align-items: center;
 }
 
@@ -58,85 +54,52 @@ main {
 
 .categoryChartText  {
   grid-column: 1 / span 2;
-  grid-row: 7 / span 1;
+  grid-row: 10 / span 1;
 }
 
 .locations {
   grid-column: 1 / span 2;
-  grid-row: 8 / span 1;
+  grid-row: 11 / span 1;
 }
 
-#map {
-  grid-column: 1 / span 2;
-  grid-row: 9 / span 1;
-  margin-left: 130px;
-}
 
 .locationText {
   grid-column: 1 / span 2;
-  grid-row: 10 / span 1;
+  grid-row: 12 / span 1;
 }
 
 .byDistrictTitle {
-  grid-column: 1 / span 2;
-  grid-row: 11 / span 1;
-  align-items: center;
-}
-
-#scatterchart{
-  margin-left: 115px;
-}
-
-#chart {
-  grid-column: 1 / span 2;
-  grid-row: 12 / span 1;
-  align-items: center;
-  padding-bottom: 40px;
-  margin-left: 20px;
-}
-
-.byDistrictText {
   grid-column: 1 / span 2;
   grid-row: 13 / span 1;
   align-items: center;
 }
 
-.monthtitle {
+#scatterchart{
+  margin-left: 115px;
+
+}
+
+.byDistrictText {
   grid-column: 1 / span 2;
   grid-row: 14 / span 1;
+  align-items: center;
+}
+
+.monthtitle {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 1;
 }
 
 #monthchart {
   grid-column: 1/ span 2;
-  grid-row: 15 / span 1;
+  grid-row: 5 / span 1;
 }
 
 .monthtext {
   grid-column: 1/ span 2;
-  grid-row: 16 / span 1;
+  grid-row: 6 / span 1;
 }
 
-.shelterstitle {
-  grid-column: 1 / span 2;
-  grid-row: 17 / span 1;
-}
-
-.shelterstext {
-  grid-column: 2 / span 2;
-  grid-row: 18 / span 1;
-  /* background-color: #a7f459; */
-}
-
-#shelter  {
-  grid-column: 1 / span 1;
-  grid-row: 18 / span 1;
-
-}
-
-.shelterlegend {
-  grid-column: 1 / span 1;
-  grid-row: 19 / span 1;
-}
 
 h1 {
   font-family: 'Slabo 13px', serif;
